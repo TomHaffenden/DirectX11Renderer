@@ -1,0 +1,225 @@
+{
+  "SceneGraph": {
+    "Children": [
+      {
+        "Type": 2,
+        "Properties": {
+          "Position": [ 0, 9, 0 ],
+          "Camera Type": 0,
+          "FOV": 70,
+          "Speed": 5,
+          "View Angle": [ 90, -90 ]
+        }
+      },
+      {
+        "Type": 2,
+        "Properties": {
+          "Position": [ 0, 1, 10 ],
+          "Camera Type": 0,
+          "FOV": 70,
+          "Speed": 5,
+          "View Angle": [ 180, 0 ]
+        }
+      },
+      {
+        "Type": 3,
+        "Properties": {
+          "Position": [ 0, 5, -10 ],
+          "Ambient": [ 10.0, 6.0, 0.0 ],
+          "Diffuse": [ 25.0, 15.0, 0.0 ],
+          "Specular": [ 12.5, 7.5, 0.0 ],
+          "Range": 100
+        }
+      },
+      {
+        "Type": 3,
+        "Properties": {
+          "Position": [ 0, 5, 10 ],
+          "Ambient": [ 0.0, 0.0, 10.0 ],
+          "Diffuse": [ 0.0, 0.0, 25.0 ],
+          "Specular": [ 0.0, 0.0, 12.5 ],
+          "Range": 100
+        }
+      },
+      {
+        "MeshType": 1,
+        "MeshProperties": [ 30, 46 ],
+        "Type": 1,
+        "Properties": {
+          "Position": [ 0, 0, 0 ],
+          "Rotation": [ 90, 0, 0 ],
+          "DiffuseTexturePath": "Grass_d.jpg",
+          "SpecularTexturePath": "Grass_s.png",
+          "NormalMapPath": "Grass_n.png"
+        }
+      },
+      {
+        "MeshType": 0,
+        "MeshProperties": "Models/stadium.obj",
+        "Type": 1,
+        "Properties": {
+          "Position": [ 0, 0, 0 ],
+          "Rotation": [ 0, 0, 0 ],
+          "DiffuseTexturePath": "Crate_Color.dds"
+        },
+        "Children": [
+          {
+            "MeshType": 0,
+            "MeshProperties": "Models/goal.obj",
+            "Type": 1,
+            "Properties": {
+              "Position": [ 0, 0, 0 ],
+              "Rotation": [ 0, 0, 0 ],
+              "DiffuseTexturePath": "Crate_Color.dds"
+            }
+          },
+          {
+            "MeshType": 0,
+            "MeshProperties": "Models/goal.obj",
+            "Type": 1,
+            "Properties": {
+              "Position": [ 0, 0, 0 ],
+              "Rotation": [ 0, 180, 0 ],
+              "DiffuseTexturePath": "Crate_Color.dds"
+            }
+          },
+          {
+            "MeshType": 0,
+            "MeshProperties": "Models/Shield.obj",
+            "Type": 1,
+            "Properties": {
+              "Position": [ 0, 0, 0 ],
+              "Rotation": [ 0, 0, 0 ],
+              "Material": {
+                "Fresnel": {
+                  "Bias": 0.1,
+                  "Scale": 1.0,
+                  "Power": 4.0,
+                  "Colour": [ 1.0, 1.0, 1.0 ]
+                }
+              },
+              "DiffuseTexturePath": "Glass.png",
+              "Transparent": true
+            }
+          }
+
+        ]
+      },
+      {
+        "MeshType": 3,
+        "MeshProperties": [ 1, 16, 16 ],
+        "Type": 1,
+        "Properties": {
+          "Position": [ 0, 1, 0 ],
+          "Material": {
+            "Diffuse": [ 2.0, 2.0, 2.0 ],
+            "Fresnel": {
+              "Bias": 0,
+              "Scale": 1.0,
+              "Power": 4.0,
+              "Colour": [ 1.0, 1.0, 1.0 ]
+            }
+          }
+        }
+      },
+      {
+        "MeshType": 0,
+        "MeshProperties": "Models/car.obj",
+        "Type": 1,
+        "Properties": {
+          "Player": true,
+          "Position": [ 0, 0, -5 ],
+          "Material": {
+            "Diffuse": [ 1.1, 1.1, 1.1 ]
+          },
+          "DiffuseTexturePath": "Car.png"
+        },
+        "Children": [
+          {
+            "MeshType": 0,
+            "MeshProperties": "Models/Wheel.obj",
+            "Type": 1,
+            "Properties": {
+              "Position": [ 0.19, 0.09, 0.265 ],
+              "Rotation": [ 0, 180, 0 ],
+              "DiffuseTexturePath": "Car.png"
+            }
+          },
+          {
+            "MeshType": 0,
+            "MeshProperties": "Models/Wheel.obj",
+            "Type": 1,
+            "Properties": {
+              "Position": [ -0.19, 0.09, 0.265 ],
+              "Rotation": [ 0, 0, 0 ],
+              "DiffuseTexturePath": "Car.png"
+            }
+          },
+          {
+            "MeshType": 0,
+            "MeshProperties": "Models/Wheel.obj",
+            "Type": 1,
+            "Properties": {
+              "Position": [ 0.19, 0.09, -0.465 ],
+              "Rotation": [ 0, 180, 0 ],
+              "DiffuseTexturePath": "Car.png"
+            }
+          },
+          {
+            "MeshType": 0,
+            "MeshProperties": "Models/Wheel.obj",
+            "Type": 1,
+            "Properties": {
+              "Position": [ -0.19, 0.09, -0.465 ],
+              "Rotation": [ 0, 0, 0 ],
+              "DiffuseTexturePath": "Car.png"
+            }
+          },
+          {
+            "Type": 2,
+            "Properties": {
+              "Position": [ 0, 0.12, 0.1 ],
+              "Camera Type": 1,
+              "FOV": 70,
+              "Speed": 5
+            }
+          },
+          {
+            "Type": 2,
+            "Properties": {
+              "Position": [ 0, 0.2, 0 ],
+              "Camera Type": 2,
+              "FOV": 70,
+              "Speed": 5,
+              "View Angle": [ 180, 30 ]
+            }
+          },
+          {
+            "Type": 3,
+            "Properties": {
+              "Position": [ -0.1, 0.065, 0.25 ],
+              "Ambient": [ 1, 1, 1 ],
+              "Diffuse": [ 1.0, 1.0, 1.0 ],
+              "Specular": [ 1.0, 1.0, 1.0 ],
+              "Range": 50,
+              "Direction": [ 0, -0.025, 1 ],
+              "Cone": 32
+            }
+          },
+          {
+            "Type": 3,
+            "Properties": {
+              "Position": [ 0.1, 0.065, 0.25 ],
+              "Ambient": [ 1, 1, 1 ],
+              "Diffuse": [ 1.0, 1.0, 1.0 ],
+              "Specular": [ 1.0, 1.0, 1.0 ],
+              "Range": 50,
+              "Direction": [ 0, -0.025, 1 ],
+              "Cone": 32
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
